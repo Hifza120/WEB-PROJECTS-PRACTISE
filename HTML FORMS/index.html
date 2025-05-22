@@ -1,0 +1,95 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>ALL INPUTS</title>
+        <style>
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap:20px;
+                border: 2px solid black;
+                padding: 8px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+    <form action="">
+        <div id="Name">
+ <label for="name">Name</label>
+ <input type="text" name="name" value="" id="name">
+        </div>
+        <div id="password">
+ <label for="password">Password</label>
+ <input type="password" name="password" id="password" value=""/>
+        </div>
+        <div id="Email">
+<label for="email">Email</label>
+<input type="email" name="email" id="email" value=""/>
+        </div>
+        <div id="Gender">
+<label for="Gender">Gender : </label>
+<input type="radio" name="Gender" value="male" id="gender"/>
+<label for="male">Male</label>
+<input type="radio" name="Gender"  value="female" id="gender2" />
+<label for="female">female</label>
+        </div>
+        <div id="DropDown1">
+ <select multiple name="Country" size="3" id="country">
+    <option value="1">Pakistan</option>
+    <option value="2">India</option>
+ <option value="3">China</option>
+ <option value="4">USA</option>
+ <option value="5">Turkiye</option>
+ <option value="6">Azerbaijan</option>
+ </select>
+        </div>
+        <div id="DropDown2">
+<select name="pullDown" id="pullDown">
+    <option value="1">Lahore</option>
+    <option value="2">London</option>
+    <option value="3">Dubai</option>
+    <option value="4">Islamabad</option>
+</select>
+        </div>
+
+        <div id="phone">
+<label for="phone">Phone Number </label>
+<input type="tel" name="phone" id="phone" value="" />
+        </div>
+        <div id="Checkbox">
+<label for="hobby">Hobbies <br>
+</label>
+<input type="checkbox" name="Badminton" id="Badminton" value="" />
+<label for="Badminton">Badminton</label>
+<br>
+<input type="checkbox" name="TableTennis" id="TableTennis" value="" />
+<label for="TableTennis">TableTennis</label>
+<br>
+<input type="checkbox" name="Cricket" id="Cricket" value="" />
+<label for="Cricket">Cricket</label>
+
+        </div>
+        <div id="file">
+<input type="file" name="" id="">
+        </div>
+        <div id="Range">
+<input type="range" name="range" id="range" min="0" max="100" />
+        </div>
+        <div id="Date">
+<input type="date" name="Date" value="" id="Date" />
+        </div>
+        <div id="Time">
+<input type="time" name="time" id="time"  value=""/>
+        </div>
+        <div id="Color">
+<input type="color" name="color" id="color" value=""/>
+        </div>
+        <div id="buttons">
+<input type="Submit" placeholder="Submit"  name="Submit" value="Submit" />
+        </div>
+    </form>
+    </body>
+</html>

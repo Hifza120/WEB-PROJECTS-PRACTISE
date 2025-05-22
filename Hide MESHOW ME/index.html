@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+ <title>Question No 6</title>
+ <style>
+    body{
+        background-color: black;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .vertical{
+        text-align: center;
+    }
+    p{
+        color:white;
+        font-size: 20px;
+    }
+    #btn{
+        background-color: seashell;
+        border: 1px solid black;
+        border-radius: 12px;
+        height:6vh;
+    }
+ </style>
+ <script>
+    function hidetext(){
+let x=document.getElementById("btn").innerHTML;
+if(x=="Hideme"){
+    let y=document.getElementById("text").style.display="none";
+    document.getElementById("btn").innerHTML="Show me";
+}
+ else if(x=="Show me"){
+
+    let y=document.getElementById("text").style.display="block";
+    document.getElementById("btn").innerHTML="Hideme";
+
+}
+    }
+ </script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="vertical">
+                <p id="text">HELLO I AM JAVASCRIPT</p>
+                <button type="button" id="btn" onclick="hidetext()">Hideme</button>
+            </div>
+        </div>
+    </body>
+</html>

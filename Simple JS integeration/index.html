@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+  <title>JAVASCRIPT FUNCTION</title>
+  <script>
+function calculatearea(a,b){
+ let area=a*b;
+ return area;
+}
+function  resultis(){
+    let l=document.getElementById("length").value;
+    let w=document.getElementById("width").value;
+    let res=calculatearea(l,w);
+    alert("area : "+res);
+    let x=document.getElementById("result");
+    x.innerHTML="Area of Rectangle is :" + res;
+}
+  </script>
+    </head>
+    <body>
+     <form action="#">
+        <label for="Length">Length : </label>
+        <input type="number" id="length" placeholder="Enter Length" value="" name="length"/>
+        <label for="width">width : </label>
+        <input type="number" id="width" placeholder="Enter width" value="" name="width"/>
+        <button type="button" style="margin-top:20px;" onclick="resultis()">Submit</button>
+     </form>
+        <p id="result"></p>
+    </body>
+</html>

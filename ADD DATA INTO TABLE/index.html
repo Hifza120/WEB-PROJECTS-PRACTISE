@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head>
+ <title>FORM1</title>
+ <link rel="stylesheet" href="style.css" >
+ <script>
+    function getdata(){
+        let y=document.getElementById("username").value;
+        let x=document.getElementById("password").value;
+        let z=document.getElementById("Email").value;
+        let main=document.getElementById("t1");
+        main.innerHTML+=`
+        <tr>
+        <td>${y}</td>
+        <td>${x}</td>
+        <td>${z}</td>
+        </tr>
+        `
+            }
+ </script>
+</head>
+<body>
+    <form action="server.js" method="POST">
+        <div id="username1">
+            <label for="username">UserName :</label>
+            <input type="text" name="username" value="" id="username" required/>     
+        </div>
+        <div id="password1">
+            <label for="password">Password: </label>
+            <input type="password" name="password" value="" id="password" required/>    
+        </div>
+        <div id="Email1">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" value="" id="Email"/>    
+        </div>
+        <button type="button" onclick="getdata()">Add row</button>
+    </form>
+  <div class="container" id="t1">
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr >
+        
+    </table>
+  </div>
+    
+</body>
+</html>
+

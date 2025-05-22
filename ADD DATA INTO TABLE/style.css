@@ -1,0 +1,22 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+form{
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    margin:10px;
+    padding:5px;
+    width:300px;
+}
+table th, table td {
+    padding: 8px 12px;
+    border: 2px solid #060606;
+
+}
+
+
